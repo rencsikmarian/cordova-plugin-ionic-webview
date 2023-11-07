@@ -816,9 +816,6 @@
     [userDefaults synchronize];
 }
 
-- (void)apply_stuff_to_configuration:(WKWebViewConfiguration *)configuration {
-}
-
 @end
 
 #pragma mark - CDVWKWeakScriptMessageHandler
