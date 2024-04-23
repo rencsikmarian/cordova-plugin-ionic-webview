@@ -27,5 +27,6 @@
 
 -(void)setServerBasePath:(CDVInvokedUrlCommand*)command;
 -(void)getServerBasePath:(CDVInvokedUrlCommand*)command;
++(void)apply_stuff_to_configuration:(WKWebViewConfiguration*)configuration;
 
 @end
