@@ -207,6 +207,10 @@
     return configuration;
 }
 
++ (void)apply_stuff_to_configuration:(WKWebViewConfiguration*)configuration {
+
+}
+
 - (void)pluginInitialize
 {
     // viewController would be available now. we attempt to set all possible delegates to it, by default
