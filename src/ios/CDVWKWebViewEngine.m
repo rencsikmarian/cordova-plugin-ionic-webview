@@ -99,7 +99,7 @@
 @property (nonatomic, strong) IONAssetHandler * handler;
 
 @property (nonatomic, readwrite) NSString *CDV_LOCAL_SERVER;
--(void)apply_stuff_to_configuration:(WKWebViewConfiguration*)configuration;
+
 @end
 
 // expose private configuration value required for background operation
@@ -206,10 +206,6 @@
     configuration.suppressesIncrementalRendering = [settings cordovaBoolSettingForKey:@"SuppressesIncrementalRendering" defaultValue:NO];
     configuration.allowsAirPlayForMediaPlayback = [settings cordovaBoolSettingForKey:@"MediaPlaybackAllowsAirPlay" defaultValue:YES];
     return configuration;
-}
-
--(void)apply_stuff_to_configuration:(WKWebViewConfiguration*)configuration {
-
 }
 
 - (void)pluginInitialize
